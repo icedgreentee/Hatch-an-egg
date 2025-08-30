@@ -79,9 +79,11 @@
     background: var(--color-inner-container-background);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
+    padding-top: 10px;
+    gap: 8px;
   }
   
   /* Header */
@@ -118,7 +120,7 @@
   /* Image Content */
   .image-content {
     position: relative;
-    height: 65%;
+    height: 60%; /* Reduced height to move content up */
     aspect-ratio: 142.5 / 171;
     display: flex;
     flex-direction: column;
@@ -128,10 +130,11 @@
     background-size: contain;
     transition: opacity 0.5s ease;
     opacity: 1;
+    margin-top: 5px;
   }
   
   /* Main Button */
-  #main-button {
+  #main-button, #reset-button {
     position: relative;
     height: 16.5%;
     aspect-ratio: 175 / 44;
@@ -150,9 +153,11 @@
     font-style: normal;
     line-height: normal;
     transition: transform 0.2s ease;
+    cursor: pointer;
+    margin-top: 5px; /* Added margin to move button up */
   }
   
-  #main-button:hover {
+  #main-button:hover, #reset-button:hover {
     transform: scale(1.05);
   }
   
@@ -165,7 +170,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 4px;
+    margin: 5px 0; /* Reduced margin to move text up */
+  }
+  
+  /* Confetti Canvas */
+  #confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
   }
   
   /* Responsive Styles for Mobile */
