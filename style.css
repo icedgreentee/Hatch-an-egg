@@ -1,14 +1,14 @@
 /* Customization Variables */
 :root {
     /* Colors */
-    --color-page-background: #50AFC9;
-    --color-main-container-background: #FF5B70;
-    --color-inner-container-background: #FFF7F4;
-    --color-border: #9E0E2B;
-    --color-button-background: #FFF;
-    --color-heading-text: #FFF;
-    --color-button-text: #9E0E2B;
-    --color-message-text: #9E0E2B;
+  --color-page-background: #C9E7F0; /* soft pastel blue instead of harsh cyan */
+  --color-main-container-background: #FFF9C4; /* butter yellow, lightened */
+  --color-inner-container-background: #FFFDF7; /* warm cream */
+  --color-border: #D6C77A; /* muted golden beige */
+  --color-button-background: #FFFFFF; /* neutral white */
+  --color-heading-text: #5b4c1f; /* dark warm brown for contrast */
+  --color-button-text: #9C8B2E; /* warm muted gold */
+  --color-message-text: #B08E2E; /* richer honey tone */
     
     /* Images */
     --image-path-background: url('assets/main-bg.png');
@@ -56,7 +56,7 @@
   /* Container styles */
   .container {
     position: relative;
-    width: 420px;
+    width: 520px;
     aspect-ratio: 420 / 330;
     border: var(--border-width-main) solid var(--color-border);
     border-radius: var(--border-radius);
