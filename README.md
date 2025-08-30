@@ -43,4 +43,4 @@ image-changer-popup/
 
 ## Credits
 
-Project idea inspired by [nasha-wanich](https://github.com/nasha-wanich).
+Project idea inspired by [nasha-wanich].
